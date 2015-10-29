@@ -3,11 +3,23 @@ ruby-go-thrift
 
 > A quick intro to thrift in Ruby and Go
 
-*Uses golang 1.4.2, thrift 0.9.3*
+*Uses Ruby 2.1.0, golang 1.4.2, thrift 0.9.3*
 *The thrift-generated go has changed significantly between pre 0.9x versions - this was tested with 0.9.3*
 
 This repo is meant as a gentle introduction to thrift in Ruby and Go. You should be familiar with both thrift, ruby and go beforehand:
 - thrift.apache.org/tutorial/go
+
+Installation
+==
+On Mac OS X
+```
+brew update
+brew install thrift
+
+```
+
+Note regarding python installation. It has [been noted](http://thrift-tutorial.readthedocs.org/en/latest/usage-example.html) that the homebrew package doesn't install all of the required python bindings. The stated workaround is to download thrift-0.9.3.tar.gz uncompress it to a working directory and run `sudo python setup.py install` from within the `lib/py` directory. This didn't seem to be sufficient in my case and will revisit this at a later date.
+
 
 This intro is split into 5 commits, each of which introduces a new concept.
 Any commit with a working server can be tested with a ruby client:
