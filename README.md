@@ -18,7 +18,7 @@ brew install thrift
 
 ```
 
-Note regarding python installation. It has [been noted](http://thrift-tutorial.readthedocs.org/en/latest/usage-example.html) that the homebrew package doesn't install all of the required python bindings. The stated workaround is to download [thrift-0.9.3.tar.gz](https://thrift.apache.org/download) uncompress it to a working directory and run `sudo python setup.py install` from within the `lib/py` directory. This didn't seem to be sufficient in my case and will revisit this at a later date.
+Note regarding python installation. It has [been noted](http://thrift-tutorial.readthedocs.org/en/latest/usage-example.html) that the homebrew package doesn't install all of the required python bindings. The stated workaround is to [download thrift-0.9.3.tar.gz](https://thrift.apache.org/download) uncompress it to a working directory and run `sudo python setup.py install` from within the `lib/py` directory. This didn't seem to be sufficient in my case and will revisit this at a later date.
 
 
 This intro is split into 5 commits, each of which introduces a new concept.
