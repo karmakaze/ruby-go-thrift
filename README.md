@@ -17,7 +17,7 @@ brew update
 brew install thrift
 sudo gem install thrift
 ```
-If you're using a Ruby/gem manager then substitute the appropriate statements in place of `sudo gem install thrift` above.
+If you're using a Ruby/gem version manager then substitute the appropriate statements in place of `sudo gem install thrift` above.
 
 
 Note regarding python installation. It has [been noted](http://thrift-tutorial.readthedocs.org/en/latest/usage-example.html) that the homebrew package doesn't install all of the required python bindings. The stated workaround is to [download thrift-0.9.3.tar.gz](https://thrift.apache.org/download) uncompress it to a working directory and run `sudo python setup.py install` from within the `lib/py` directory. This didn't seem to be sufficient in my case and will revisit it at a later date.
