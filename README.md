@@ -1,19 +1,19 @@
-go-thrift
+ruby-go-thrift
 ===
 
-> A quick intro to thrift in golang
+> A quick intro to thrift in Ruby and Go
 
-*Uses golang 1.4.2, thrift 0.9.2*
-*The thrift-generated go has changed significantly between versions - be sure to use 0.9.2*
+*Uses golang 1.4.2, thrift 0.9.3*
+*The thrift-generated go has changed significantly between pre 0.9x versions - this was tested with 0.9.3*
 
-This repo is meant as a gentle introduction to thrift in golang. You should be familiar with both thrift and go beforehand:
+This repo is meant as a gentle introduction to thrift in Ruby and Go. You should be familiar with both thrift, ruby and go beforehand:
 - thrift.apache.org/tutorial/go
 
 This intro is split into 5 commits, each of which introduces a new concept.
-Any commit with a working server can be tested with a python client:
+Any commit with a working server can be tested with a ruby client:
 
-    thrift --gen py example.thrift
-    ./client.py
+    thrift --gen rb example.thrift
+    ruby RubyClient.py
 
 ### Commits
 
