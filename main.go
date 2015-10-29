@@ -4,10 +4,10 @@ package main
 
 import (
 	"git.apache.org/thrift.git/lib/go/thrift"
-	"github.com/terminalcloud/go-thrift/example"
-	"github.com/terminalcloud/go-thrift/example/otherservice"
-	"github.com/terminalcloud/go-thrift/example/service"
-	"github.com/terminalcloud/go-thrift/server"
+	"github.com/karmakaze/ruby-go-thrift/example"
+	"github.com/karmakaze/ruby-go-thrift/example/otherservice"
+	"github.com/karmakaze/ruby-go-thrift/example/service"
+	"github.com/karmakaze/ruby-go-thrift/server"
 	"log"
 )
 

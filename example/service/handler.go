@@ -1,7 +1,7 @@
 package service
 
 import (
-	types "github.com/terminalcloud/go-thrift/example"
+	types "github.com/karmakaze/ruby-go-thrift/example"
 	"log"
 )
 
