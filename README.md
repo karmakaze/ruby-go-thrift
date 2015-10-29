@@ -24,16 +24,23 @@ Note regarding python installation. It has [been noted](http://thrift-tutorial.r
 
 
 This intro is split into 5 commits, each of which introduces a new concept.
+
+Generating and running the Go server which must be done before the client.
+```
+thrift -r -gen go example.thrift
+go run main.go
+```
+
 Any commit with a working server can be tested with a ruby client:
 ```
 thrift -r -gen rb example.thrift
 ruby RubyClient.py
 ```
 
-Generating and running the Go server.
+If the python installation is suceessful, the the following can also be used:
 ```
-thrift -r -gen go example.thrift
-go run main.go
+thrift -r -gen py example.thrift
+python client.py
 ```
 
 ### Commits
