@@ -15,7 +15,7 @@ On Mac OS X
 ```
 brew update
 brew install thrift
-
+sudo gem install thrift
 ```
 
 Note regarding python installation. It has [been noted](http://thrift-tutorial.readthedocs.org/en/latest/usage-example.html) that the homebrew package doesn't install all of the required python bindings. The stated workaround is to [download thrift-0.9.3.tar.gz](https://thrift.apache.org/download) uncompress it to a working directory and run `sudo python setup.py install` from within the `lib/py` directory. This didn't seem to be sufficient in my case and will revisit it at a later date.
@@ -23,9 +23,16 @@ Note regarding python installation. It has [been noted](http://thrift-tutorial.r
 
 This intro is split into 5 commits, each of which introduces a new concept.
 Any commit with a working server can be tested with a ruby client:
+```
+thrift -r -gen rb example.thrift
+ruby RubyClient.py
+```
 
-    thrift --gen rb example.thrift
-    ruby RubyClient.py
+Generating and running the Go server.
+```
+thrift -r -gen go example.thrift
+go run main.go
+```
 
 ### Commits
 
